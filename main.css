@@ -1,0 +1,7 @@
+.alert-box {
+    background: rgb(156, 156, 236);
+    color: rgb(52, 52, 216);
+    padding: 20px; /*모든 방향에 내부 여백 적용*/
+    border-radius: 5px; /*모서리 둥글게*/
+    display: none; /*평소에 숨길때는 none*/
+}
