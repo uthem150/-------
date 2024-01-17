@@ -9,19 +9,27 @@
 <body>
 
     <div class="alert-box" id="alert">
-        <p>Alert 박스</p>
-        <button onclick="alert_close()">닫기</button>
+        <p id="title">Alert 박스</p>
+        <button id="close"> X </button>
     </div>
-    <button onclick="alert_open()">버튼</button>
-    
+
+    <button onclick="alert('ID를 입력하세요')">버튼1</button>
+    <button onclick="alert('PW를 입력하세요')">버튼2</button>
+
+
     <script>
 
-        function alert_open() {
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+
+        function alert(parameter) {
+            document.getElementById('title').innerHTML = parameter;
             document.getElementById('alert').style.display='block';
         }
 
-        function alert_close() {
-            document.getElementById('alert').style.display='none';;
+        function alert_func(parameter) {
+            document.getElementById('alert').style.display=parameter;
         }
 
     </script>
