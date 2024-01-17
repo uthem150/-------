@@ -5,3 +5,7 @@
     border-radius: 5px; /*모서리 둥글게*/
     display: none; /*평소에 숨길때는 none*/
 }
+
+.yello-bg {
+    background: yellow;
+}
